@@ -1,0 +1,11 @@
+.about {
+    background-color: var(--fondo-azul);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.about__title {
+    font-size: 2rem;
+}
