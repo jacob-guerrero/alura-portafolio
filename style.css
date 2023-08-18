@@ -28,6 +28,10 @@ a{
     text-decoration: none;
     color: var(--cor-de-link);
 }
+h2, h3 {
+    margin: 0;
+    padding: 0;
+}
 
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
 

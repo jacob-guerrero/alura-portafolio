@@ -1,0 +1,27 @@
+.title {
+    padding: 0 2rem;
+}
+.title__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 1.5rem;
+}
+
+.title__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.title__bio {
+    font-size: 2.5rem;
+}
+.title__subsection {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.title__network {
+    display: flex;
+    gap: 1.4rem;
+}
