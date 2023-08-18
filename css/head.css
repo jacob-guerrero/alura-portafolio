@@ -1,0 +1,36 @@
+.tudo {
+    width: 100%;
+}
+.menu {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.menu__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.menu__header__icon {
+    width: 2rem;
+    height: auto;
+}
+.menu__title {
+    font-size: 1.2rem;
+}
+
+.menu__navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu__list {
+    display: flex;
+    gap: 1.2rem;
+}
+.menu__list .menu__list__item:last-child {
+    font-weight: 700;
+}
