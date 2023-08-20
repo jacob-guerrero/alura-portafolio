@@ -1,0 +1,22 @@
+.skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
+    padding: 2rem;
+    gap: 1.4rem;
+}
+
+.skills__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.skills__line {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: calc((96vw - 5rem)/ 6);
+    gap: 1rem;
+}
+.skills__box {
+    background-color: white;
+}
