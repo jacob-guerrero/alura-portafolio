@@ -18,5 +18,8 @@
     gap: 1rem;
 }
 .skills__box {
+    padding: 1rem;
     background-color: white;
+    display: flex;
+    align-items: flex-end;
 }
