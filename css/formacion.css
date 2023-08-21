@@ -1,0 +1,42 @@
+.academic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    padding: 4rem 2rem;
+    background-color: var(--fondo-azul);
+}
+
+.academic__title {
+    font-size: 1.6rem;
+}
+.academic__courses {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.academic__courses__box {
+    width: calc(100%/4);
+    max-width: 368px;
+    height: calc(100%/5 - 100px);
+    max-height: 286px;
+}
+.academic__courses__list {
+    display: flex;
+    flex-direction: column;
+}
+.academic__courses__item__img {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.logo_udenar {
+    width: 130px;
+    height: auto;
+}
+.academic__courses__item__title {
+    padding-top: 1rem;
+}
