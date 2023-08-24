@@ -11,6 +11,8 @@ coloque nas sessões indicadas*/
    --cor-de-link: #000;
    --fondo-azul: #EAF2FD;
    --action-blue: #2A7AE4;
+   --warning-color: #df2525;
+   --contrast-dark-color: #4d4d4d;
 }
 
 body {

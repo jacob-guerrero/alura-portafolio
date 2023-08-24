@@ -217,8 +217,8 @@
                 <h3 class="experience__text">Challenge Oracle </h3>
                     <div class="experience__description">
                         <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                            <span class="experience__repo"><a href="#"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="#"><button class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
             </div>
         </div>  
@@ -231,8 +231,8 @@
                 <h3 class="experience__text">Challenge Oracle </h3>
                     <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                            <span class="experience__repo"><a href="#"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="#"><button class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
             </div>
         </div>  
@@ -244,8 +244,8 @@
                 <h3 class="experience__text">Challenge Oracle </h3>
                     <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
+                            <span class="experience__repo"><a href="#"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="#"><button class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
         </div>
         </div>  
@@ -262,9 +262,13 @@
                 <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
                 <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
                 <form class="formcontato__form" name="form">
-                    <input class="formcontato__input" type="text" name="nombre" placeholder="Nombre">
+                    <div class="input-container">
+                        <input name="name" id="name" class="formcontato__input" type="text" placeholder="Nombre" required data-tipo="nombre" maxlength="50">
+                        <label class="formcontato-label" for="name">Nombre</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
                     <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
-                    <input class="formcontato__input" type="text" name="asunto" placeholder="Assunto">
+                    <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto">
                     <textarea class="formcontato__textarea" rows="6" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
                     <button type="submit" class="formcontato__botao">Enviar mensaje</button>
                 </form>

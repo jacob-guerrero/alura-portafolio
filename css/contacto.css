@@ -5,6 +5,7 @@
 
 .formcontato__contacto {
     display: flex;
+    justify-content: center;
     gap: 1.4rem;
 }
 .formcontato__text {
@@ -28,8 +29,12 @@
     flex-direction: column;
     justify-content: space-between;
 }
-.formcontato__input {
-    padding: 0.8rem 0.4rem;
+.formcontato__input, .formcontato__textarea {
+    padding: 1.2rem 0.8rem 0.4rem 0.8rem;
+    border: 1px solid var(--action-blue);
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1rem;
 }
 .formcontato__botao {
     padding: 0.8rem;
@@ -39,4 +44,44 @@
     width: max-content;
     cursor: pointer;
     font-size: 0.9rem;
+}
+
+/* Validation */
+.input-container {
+    position: relative;
+}
+.formcontato-label {
+    position: absolute;
+    top: 1rem;
+    left: 0.4rem;
+    font-size: 1.1rem;
+    transition: all 0.25s;
+    color: var(--contrast-dark-color);
+}
+.input-container--invalid .formcontato__input {
+    border: 1px solid var(--warning-color);
+    border-radius: 4px;
+}
+.input-container--invalid .formcontato-label {
+    color: var(--warning-color);
+  }
+.formcontato__input::placeholder {
+    visibility: hidden;
+    color: #00000000;
+  }
+.formcontato__input:not(:placeholder-shown) + .formcontato-label,
+.formcontato__input:focus + .formcontato-label {
+font-size: 0.8rem;
+top: 0.25rem;
+transition: all 0.25s;
+}
+
+.input-message-error {
+    display: none;
+}
+.input-container--invalid .input-message-error {
+    color: var(--warning-color);
+    display: block;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
 }
