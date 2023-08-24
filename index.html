@@ -267,9 +267,17 @@
                         <label class="formcontato-label" for="name">Nombre</label>
                         <span class="input-message-error">Este campo no es valido</span>
                     </div>
-                    <input class="formcontato__input" type="email" name="email" placeholder="E-mail">
+
+                    <div class="input-container">
+                        <input name="email" id="email" class="formcontato__input" type="email" placeholder="Email" required data-tipo="email">
+                        <label class="formcontato-label" for="email">Email</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+
                     <input class="formcontato__input" type="text" name="asunto" placeholder="Asunto">
+
                     <textarea class="formcontato__textarea" rows="6" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
+
                     <button type="submit" class="formcontato__botao">Enviar mensaje</button>
                 </form>
             </div>

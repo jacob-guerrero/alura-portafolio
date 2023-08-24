@@ -32,7 +32,7 @@ const mensajesDeError = {
     },
     email: {
         valueMissing: "El campo email no puede estar vacio",
-        typeMismatch: "El correo no es valido"
+        typeMismatch: "El correo no es valido (ej: nombre@empresa.com)"
     },
     numero: {
         valueMissing: "El campo telefono no puede estar vacio",
