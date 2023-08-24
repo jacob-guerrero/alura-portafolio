@@ -1,0 +1,48 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+    padding: 2rem;
+}
+
+.experience__section__title {
+    font-size: 2rem;
+}
+.experience__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+.experience__title {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+}
+.experience__text {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0.4rem 0;
+}
+.experience__description {
+    display: flex;
+    gap: 0.4rem;
+}
+.experiencia__botao--repo, .experience__botao--demo {
+    padding: 0.5rem;
+    border: 2px solid var(--action-blue);
+    cursor: pointer;
+}
+.experiencia__botao--repo {
+    color: var(--action-blue);
+}
+.experience__botao--demo {
+    background-color: var(--action-blue);
+    color: white;
+}
+.experience__box:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+.experience__box:not(:nth-of-type(1)) {
+    margin-top: 1.8rem;
+}
