@@ -15,6 +15,17 @@ coloque nas sessões indicadas*/
    --contrast-dark-color: #4d4d4d;
 }
 
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+
 body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
@@ -121,25 +132,89 @@ section.footer{
 Utiliza las referencias de los breakpoints @media abajo */
 
 
+/*small desktop*/
+@media screen and (max-width: 992px) {
+    /* Menú */
+    .menu__list__item:not(:last-of-type) {
+        display: none;
+    }
+
+    /*Experiencia Profesional*/
+    .experience__box {
+        flex-direction: column;
+    }
+    .experience__info, .experience__info-container {
+        align-self: flex-start;
+    }
+    .experience .experience__box:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    /* Academic */
+    .academic .academic__courses {
+        justify-content: space-evenly;
+    }
+    .academic__courses .academic__courses__box {
+        width: calc((100vw - 4rem)/3);
+    }
+
+    /* Contacto */
+    #contacto {
+        justify-content: flex-start;
+    }
+    .formcontato--esquerda {
+        display: none;
+    }
+    .formcontato__form {
+        gap: 1.2rem;
+    }
+    .formcontato .formcontato__contacto {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .formcontato__text {
+        width: 100%;
+    }
+}
+
 /*Tablet*/
-@media (min-width: 768px) {
+@media screen and (max-width: 770px) {
+    /*Titulo*/
+    .title__container .title__bio {
+        font-size: 2rem;
+    }
+    .title__container .title__subsection {
+        font-size: 1.2rem;
+    }
+    .title__profile {
+        width: 300px;
+        height: auto;
+    }
 
-/* Menú */
+    /*Skills & Hobbies*/
+    .skills .skills__line, .hobbies .hobbies__line {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    /*Formación Académica*/
+    .academic__courses__item__img {
+        min-width: 130px;
+    }
+    .academic__courses__item__img img{
+        width: 90%;
+        height: 130px;
+    }
 
-/*title*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
+    /*Experiencia Profesional*/
+    .experience__box .experience__img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media screen and (min-width: 425px) {
 
 /*Menu*/
 
