@@ -1,6 +1,8 @@
 .formcontato {
     padding: 4rem 2rem;
     background-color: var(--fondo-azul);
+    display: flex;
+    justify-content: center;
 }
 
 .formcontato__contacto {

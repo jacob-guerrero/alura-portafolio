@@ -36,6 +36,26 @@ h2, h3, h4 {
     margin: 0;
     padding: 0;
 }
+.tudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu {
+    width: 100%;
+    max-width: 1400px;
+}
+.title, .skills, .hobbies, .experience {
+    width: 100%;
+    max-width: 1200px;
+}
+.about, .academic, .formcontato {
+    width: 100%;
+}
+.about__container, .academic__courses, .formcontato__contacto {
+    max-width: 1200px;
+}
 
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
 
