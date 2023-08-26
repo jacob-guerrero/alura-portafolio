@@ -8,6 +8,7 @@
 
 .experience__section__title {
     font-size: 1.6rem;
+    text-align: center;
 }
 .experience__box {
     display: flex;

@@ -181,13 +181,19 @@ Utiliza las referencias de los breakpoints @media abajo */
 @media screen and (max-width: 770px) {
     /*Titulo*/
     .title__container .title__bio {
-        font-size: 2rem;
+        font-size: clamp(1.7rem, 5vw, 2rem); 
     }
     .title__container .title__subsection {
         font-size: 1.2rem;
     }
-    .title__profile {
-        width: 300px;
+    .title__container .title__network {
+        gap: 0.8rem;
+    }
+    .title__div .title__container {
+        gap: 1rem;
+    }
+    .title__div .title__profile {
+        width: 100%;
         height: auto;
     }
 
@@ -214,24 +220,78 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 
 /*Mobile*/
-@media screen and (min-width: 425px) {
+@media screen and (max-width: 425px) {
+    /* Menu */
+    .tudo .menu {
+        padding: 1rem;
+    }
 
-/*Menu*/
+    /*Titulo*/
+    .tudo .title {
+        padding: 1rem;
+    }
+    .title .title__div {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content 1fr;
+        justify-items: center;
+    }
+    .title__div .title__profile {
+        grid-column: 1;
+        grid-row: 1;
+        max-width: 200px;
+    }
+    .title__div .title__container {
+        grid-row: 2;
+    }
 
-/*Titulo*/
+    /*Sección sobre mi*/
+    .tudo .about {
+        padding: 1rem;
+    }
 
-/*Sección sobre mi*/
+    /*Skills & Hobbies*/
+    .tudo .skills, .tudo .hobbies {
+        padding: 1rem;
+    }
+    .skills .skills__line, .hobbies .hobbies__line {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    /*Formación Académica*/
+    .tudo .academic {
+        padding: 1rem;
+    }
+    .academic .academic__courses {
+        flex-direction: column;
+        align-items: center;
+    }
+    .academic__courses .academic__courses__box {
+        width: 100%;
+    }
+    .academic__courses__item__img img{
+        max-width: 130px;
+        height: auto;
+    }
+    .academic__courses__list .academic__courses__item__title {
+        padding-top: 0.5rem;
+    }
+    .academic__courses__item__subtitle p{
+        margin: 0.2rem 0;
+    }
 
-/*Skills*/
+    /*Experiencia Profesional*/
+    .tudo .experience {
+        padding: 1rem;
+    }
 
-/*Hobbies*/
- 
-/*Formación Académica*/
+    /*Contacto*/
+    .tudo .formcontato {
+        padding: 1rem;
+    }
 
-/*Experiencia Profesional*/
-
- /*Contacto*/
-
-/*Footer*/
-
+    /*Footer*/
+    .tudo .footer {
+        padding: 1rem;
+    }
 }
